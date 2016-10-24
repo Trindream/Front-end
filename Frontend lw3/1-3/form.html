@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Form</title>
+  </head>
+  <body>
+    <form
+	  action="mailto:trindream@gmail.com"
+	  method="post"
+	>
+	  <h1>Анкета участника эстафеты</h1>
+	  
+	  <h2>Личная информация</h2>
+	  <label>ФИО:<br><input type="text" name="name" placeholder="Введите ваше полное имя"></label>
+	  <br><br>
+	  <label for="age_select">Возраст:</label><br>
+	  <select id="age_select" name="age">
+	    <option value="18">до 18</option>
+	    <option value="16">до 16</option>
+	    <option value="14">до 14</option>
+	  </select>
+	  <br><br>
+	  <label>Адрес:<br><input type="text" name="address" placeholder="Введите адрес"></label>
+	  <br>
+	  
+	  <h2>Дополнительная информация</h2>
+	  <p><b>Занимаетесь ли вы спортом</b></p>
+	  <label>Да<input type="radio" name="sportsman" value="true"></label><br>
+	  <label>Нет<input type="radio" name="sportsman" value="false"></label><br>
+	  <p><b>Какой вид спорта вы предпочитаете:</b></p>
+	  <label>Футбол<input type="checkbox" name="sport" value="football"></label><br>
+	  <label>Волейбол<input type="checkbox" name="sport" value="volleyball"></label><br>
+	  <label>Плавание<input type="checkbox" name="sport" value="swimming"></label><br>
+	  <label>Бег<input type="checkbox" name="sport" value="running"></label><br>
+	  <label>Пауэрлифтинг<input type="checkbox" name="sport" value="powerlifting"></label><br>
+	  <label>Акробатика<input type="checkbox" name="sport" value="acrobatics"></label>
+	  <br><br>
+	  <label>О себе: <textarea name="about_self" placeholder="Коротко о себе"></textarea></label>
+	  <br><br>
+	  <input type="submit" value="Отправить">
+	</form>
+  </body>
+</html>

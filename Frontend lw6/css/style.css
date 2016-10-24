@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300i,400';
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.centered_title_block
+{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.subtitle
+{
+	font: 20pt 'Kaushan Script', cursive;
+}
+
+.title
+{
+	margin-top: 10px;
+	font: bold 24pt 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.red_line
+{
+	width: 60px;
+	height: 3px;
+	margin: 30px auto 0;
+	background: #f38181;
+}
+
+.services_block
+{
+	max-width: 1200px;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.inline_container
+{
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	max-width: 350px;
+	min-width: 180px;
+	padding: 20px 0 20px 60px;
+	margin: 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.inline_container:before
+{
+	display: block;
+	content: "";
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	background: url(../img/service_sprite.png);
+}
+
+.inline_container:nth-child(2):before { background-position: -34px 0; }
+.inline_container:nth-child(3):before { background-position: -68px 0; }
+.inline_container:nth-child(4):before { background-position: -102px 0; }
+.inline_container:nth-child(5):before { background-position: -136px 0; }
+.inline_container:last-child:before { background-position: -170px 0; }
+
+.service_title
+{
+	font: 11pt 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.service_text
+{
+	margin-top: 15px;
+	font: 12pt 'Roboto', sans-serif;
+	color: #999999;
+	line-height: 24px;
+}
+
+.feature
+{
+	position: relative;
+	padding-top: 40px;
+	max-width: 1920px;
+	margin: 80px auto 0;
+	background: url(../img/background.png) center 0 no-repeat;
+}
+
+.picture_container
+{
+	padding-top: 30px;
+	margin: 0 25%;
+}
+
+.picture
+{
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+	margin-bottom: -5px;
+}
+
+@media only screen and (max-width: 450px)
+{
+	.service_container
+	{
+		margin: 0 80px;
+	}
+	
+	.service_text
+	{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+body
+{
+	font-family: "Tahoma", sans-serif;
+	min-width: 1000px;
+	margin: 0;
+}
+
+header
+{
+	height: 410px;
+	background: #aaff99 url(../img/car.png) no-repeat center;
+	border-bottom: 2px solid #99ee77;
+}
+
+footer
+{
+	height: 80px;
+	margin-top: 40px;
+	background: #aaff99;
+	border-top: 2px solid #99ee77;
+}
+
+h1
+{
+	width: 100%;
+	text-align: center;
+	font-size: 28pt;
+	background: #eeeeee;
+	color: #224400;
+}
+
+h2
+{
+	margin-left: 20px;
+	font-size: 18pt;
+}
+
+li
+{
+	font-size: 11pt;
+	margin: 5px;
+}
+
+form
+{
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid #d0d0d0;
+	border-radius: 10px;
+	text-align: center;
+}
+
+form table
+{
+	width: 100%;
+}
+
+caption
+{
+	font-size: 18pt;
+	margin-bottom: 15px;
+}
+
+p{
+	text-indent: 20px;
+}
+
+.left, .right
+{
+	width: 50%;
+	padding: 20px;
+}
+
+.characteristic
+{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.characteristic tr
+{
+	background:#e0e0e0;
+}
+
+.characteristic tr:nth-child(2n)
+{
+	background:#f0f0f0;
+}
+
+.characteristic td
+{
+	padding: 5px;
+	border-top: 1px dashed #bbbbbb;
+	border-bottom: 1px dashed #bbbbbb;
+}
+
+.not_available
+{
+	text-decoration: line-through;
+}
+
+.button
+{
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 20px;
+	margin-top: 20px;
+}
+

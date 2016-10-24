@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Эко-мобиль</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+	</header>
+	<h1>Leafroad "MorningDew"</h1>
+	
+	<table>
+	  <tr>
+	    <td class="left">
+		  <p>
+		    Стремительный рост автомобильного транспорта неизбежно отразился
+			на  экологии  нашей  планеты. 90% загрязнений – это доля, вносимая
+			автотранспортом в загрязнение атмосферы.
+		  </p>
+		  <p>
+		    <b>MorningDew</b> - это
+			новый вид транспорта, отличающийся от обычных автомобилей высокой
+			экономичностью  и  экологичностью. Он оснащен новейшей водородной
+			установкой, с повышенными требованиями к безопасности. А бак
+			заполняется обычной водой, что позваляет заправляеться фактически
+			в любом месте.
+		  </p>
+		</td>
+		
+		<td class="right">
+		  <table class="characteristic">
+		    <caption>Технические характеристики</caption>
+			<tr>
+			  <td>Тип двигателя:</td>
+			  <td>водородная установка</td>
+			</tr>	
+            <tr>
+			  <td>Объем двигателя:</td>
+			  <td>1596 см<sup>3</sup></td>
+			</tr>
+			<tr>
+			  <td>Максимальная скорость:</td>
+			  <td>220 км/ч</td>
+			</tr>
+			<tr>
+			  <td>Крутящий момент:</td>
+			  <td>190 Н*м</td>
+			</tr>
+			<tr>
+			  <td>Объем багажника:</td>
+			  <td>310 л</td>
+			</tr>
+			<tr>
+			  <td>Масса автомобиля:</td>
+			  <td>1270 кг</td>
+			</tr>
+			<tr>
+			  <td>Максимальная снаряженная масса автомобиля:</td>
+			  <td>1055 кг</td>
+			</tr>
+			<tr>
+			  <td>Тип привода:</td>
+			  <td>передний</td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>
+	<h2>Комплектации:</h2>
+	<ol>
+	  <li>Комплектация №1 (стандартный двигатель и салон)</li>
+	  <li>Комплектация №2 (спортивный двигатель, облегченный салон)</li>
+	  <li class="not_available">Комплектация №3 (модифицированный двигатель, облегченный салон)</li>
+	  <li>Комплектация №4 (стандартный двигатель и салон, солнечная панель на крыше)</li>
+	</ol>
+	<h2>Заказать:</h2>
+	<form>
+	  <table>
+	    <tr>
+		  <td>
+		    <label for="equipment">Комплектация:</label><br>
+	        <select id="equipment" name="equipment">
+	          <option value="1">Комплектация №1</option>
+	          <option value="2">Комплектация №2</option>
+	          <option disabled value="3">Комплектация №3</option>
+	          <option value="3">Комплектация №4</option>
+	        </select>
+		  </td>
+		  <td>
+	        <label>Тест-драйв:<br><input type="checkbox" name="test" value="yes"></label>
+		  </td>
+		  <td>
+			<label for="color">Цвет:</label><br>
+			<select id="color" name="color">
+		      <option value="white">Белый</option>
+			  <option value="black">Черный</option>
+		      <option value="green">Зеленый</option>
+		    </select>
+	      </td>
+		  <td>
+	        <label>ФИО:<br><input type="text" name="name" placeholder="Укажите ваше полное имя"></label>
+	      </td>
+		  <td>
+	        <label>Телефон:<br><input type="tel" name="phone" placeholder="Укажите ваш телефон"></label>
+	      </td>
+		  <td>
+	        <label>Комментарий к заказу:<br><textarea name="comment" placeholder="Ваш комментарий"></textarea></label>
+	      </td>
+        </tr>
+		<tr>
+	      <td colspan="6"><input class="button" type="submit" value="Заказать"><td>
+		</tr>
+	  </table>
+	</form>
+	<footer>
+	</footer>
+  </body>
+</html>
