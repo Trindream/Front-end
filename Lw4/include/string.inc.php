@@ -1,15 +1,15 @@
-<?php
-	function WithoutLast($str)
+<?
+	function withoutLast($str)
 	{
 		return substr_replace($str, "", -1);
 	}
 	
-	function Last($str)
+	function last($str)
 	{
 		return $str{strlen($str) - 1};
 	}
 	
-	function Reverse($str)
+	function reverse($str)
 	{
 		$resultStr = "";
 		for ($i = strlen($str) - 1; $i >= 0; $i--)

@@ -1,27 +1,32 @@
-<?php
-header("Content-Type: text/plaine");
-$dictionary = array(
-    "Keyboard" => "Êëàâèàòóðà",
-    "Word" => "Ñëîâî",
-    "Name" => "Èìÿ",
-    "Dictionary" => "Ñëîâàðü",
-    "Elephant" => "Ñëîí"
-);
-if ($_GET['word'] != NULL)
-{
-    if (key_exists($_GET['word'], $dictionary))
-        echo "Translate(EN-RU): ", $dictionary[$_GET['word']];
-    elseif (in_array(iconv("UTF-8", "cp1251", $_GET['word']), $dictionary))
-        echo "Translate(RU-EN): ", array_search(iconv("UTF-8", "cp1251", $_GET['word']), $dictionary);
+<?
+    header("Content-Type: text/plaine");
+    $dictionary = array
+	(
+        "Keyboard" => "ÐšÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ð°",
+        "Word" => "Ð¡Ð»Ð¾Ð²Ð¾",
+        "Name" => "Ð˜Ð¼Ñ",
+        "Dictionary" => "Ð¡Ð»Ð¾Ð²Ð°Ñ€ÑŒ",
+        "Elephant" => "Ð¡Ð»Ð¾Ð½"
+    );
+    if (isset($_GET['word']) && ($_GET['word'] != ""))
+    {
+        if (key_exists($_GET['word'], $dictionary))
+		{
+            echo "Translate(EN-RU): ", $dictionary[$_GET['word']];
+		}
+        elseif (in_array($_GET['word'], $dictionary))
+		{
+            echo "Translate(RU-EN): ", array_search($_GET['word'], $dictionary);
+		}
+        else
+        {
+            header("HTTP/1.0 404");
+            echo "The word is not found.";
+        }
+    }
     else
     {
-        header("HTTP/1.0 404");
-        echo "The word is not found.";
+        header("HTTP/1.0 400");
+        echo "Argument \"word\" is not specified or is set incorrectly.";
     }
-}
-else
-{
-    header("HTTP/1.0 400");
-    echo "Argument \"word\" is not specified or is set incorrectly.";
-}
 ?>
