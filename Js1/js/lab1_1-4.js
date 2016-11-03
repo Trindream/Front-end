@@ -44,9 +44,10 @@ function IsPrime(number)
 
 function PrintPrimeNumbers(min, max)
 {
-	for (var i = min; i <= max; i++)
-		if (IsPrime(i))
-			console.log(i);
+	if (min >= 2)
+		for (var i = min; i <= max; i++)
+			if (IsPrime(i))
+				console.log(i);
 }
 
 PrintPrimeNumbers(2, 10);
