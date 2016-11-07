@@ -29,11 +29,9 @@ function calculate(operand1, operand2, operator)
 			result = operand1 / operand2;
 		else
 			alert("Деление на ноль");
-    else if(operator == POW_OPERATOR && operand2 >= 0)
+    else if(operator == POW_OPERATOR)
 	{
-		result = 1;
-		for (var i = 1; i <= operand2; i++)
-			result *= operand1;
+		result = Math.pow(operand1, operand2);
 	}
     else
         alert("Неизвестная операция:" + operator);
