@@ -34,7 +34,7 @@ function calculate(operand1, operand2, operator)
 		result = Math.pow(operand1, operand2);
 	}
     else
-        alert("Неизвестная операция:" + operator);
+        alert("Неизвестная операция: " + operator);
     return result;
 }
 
@@ -44,7 +44,7 @@ var operator = askOperatior();
 var operand2 = askDigit();
 
 var result = calculate(operand1, operand2, operator);
-if (result)
+if (result != null)
 {
     alert(operand1 + operator + operand2 + "=" + result);
 }
