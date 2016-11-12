@@ -8,6 +8,10 @@ function Calculator()
 	{
 		this.operand1 = +prompt("Введите первое число: ", "");
 		this.operand2 = +prompt("Введите второе число: ", "");
+		if (isNaN(this.operand1))
+			this.operand1 = 0;
+		if (isNaN(this.operand2))
+			this.operand2 = 0;
 	};
 	
 	this.Sum = function()
