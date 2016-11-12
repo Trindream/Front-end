@@ -1,33 +1,3 @@
-//1
-function Hide(event)
-{
-	this.style.visibility = "hidden";
-	//$(".learn_more").css("visibility", "hidden");
-}
-$(".learn_more").click(Hide);
-
-//2 Сработают обе функции, т.к. уделение было некорректно
-
-//3
-function Switch(e)
-{
-	var text = $(".mini_text")[0];
-	if (text.style.display == "none")
-	{
-		this.style.backgroundPosition = "0 0";
-		text.style.display = "block";
-	}
-	else
-	{
-		this.style.backgroundPosition = "70px 0";
-		text.style.display = "none";
-	}
-}
-
-var switcher = $(".arrow")[0];
-switcher.addEventListener("click", Switch);
-
-//4
 var comments = [
 "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
 sed do eiusmod tempor incididunt ut labore et dolore magna \
