@@ -22,5 +22,5 @@ function ModerateMessage(message)
 	return result;
 }
 
-var message = "Черт побери Вас, сэр!";
+var message = "Черт побери Вас, сэр!\nИзвени.";
 console.log(ModerateMessage(message));

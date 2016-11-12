@@ -14,8 +14,8 @@ var cat = {
 }
 
 dyadyaFedor.cat = cat;
-console.log(dyadyaFedor);
+console.dir(dyadyaFedor.cat.name);
 
 cat.name = "Иванов";
-console.log(dyadyaFedor.cat);
-//переменная cat и dyadyaFedor.cat ссылаются на один объект
+console.dir(dyadyaFedor.cat.name);
+console.log("переменная cat и dyadyaFedor.cat ссылаются на один объект");

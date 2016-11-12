@@ -24,7 +24,10 @@ function Calculator()
 	
 	this.Div = function()
 	{
-		this.result = this.operand1 / this.operand2;
+		if (this.operand2 == 0)
+			this.result = "Деление на ноль.";
+		else
+			this.result = this.operand1 / this.operand2;
 	};
 	
 	this.Sub = function()
@@ -34,7 +37,7 @@ function Calculator()
 	
 	this.GetResult = function()
 	{
-		return result;
+		return this.result;
 	};
 }
 
@@ -42,3 +45,5 @@ var calculator = new Calculator();
 calculator.Read();
 console.log(calculator.Sum());
 console.log(calculator.Mul());
+calculator.Div();
+console.log(calculator.GetResult());

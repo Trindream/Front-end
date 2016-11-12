@@ -43,3 +43,5 @@ slider.prevSlide();
 console.log(slider.getActiveSlide(), slider.activeSlide);
 slider.nextSlide();
 console.log(slider.getActiveSlide(), slider.activeSlide);
+slider.nextSlide();
+console.log(slider.getActiveSlide(), slider.activeSlide);
