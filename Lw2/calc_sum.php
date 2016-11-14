@@ -17,7 +17,7 @@
 	}
     else
 	{
-        header("Content-Type: text/plaine");
+        header("Content-Type: text/plain");
         switch ($_GET['operation'])
 		{
             case "add":
