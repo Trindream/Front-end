@@ -1,5 +1,5 @@
 <?
-    header("Content-Type: text/pline");
+    header("Content-Type: text/plain");
 	
     //a)
     $primeNumbers = array();
@@ -55,4 +55,3 @@
         }
         echo "\n";
     }
-?>
