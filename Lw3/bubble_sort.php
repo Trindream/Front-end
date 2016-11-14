@@ -34,6 +34,5 @@
 			break;
 		}
     }
-    header("Content-Type: text/pline");
+    header("Content-Type: text/plain");
     print(implode(",", $arr));
-?>
