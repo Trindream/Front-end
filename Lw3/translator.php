@@ -1,5 +1,5 @@
 <?
-    header("Content-Type: text/plaine");
+    header("Content-Type: text/plain");
     $dictionary = array
 	(
         "Keyboard" => "Клавиатура",
@@ -29,4 +29,3 @@
         header("HTTP/1.0 400");
         echo "Argument \"word\" is not specified or is set incorrectly.";
     }
-?>
