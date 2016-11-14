@@ -8,4 +8,3 @@
 		header("HTTP/1.0 400");
 		echo "Argument \"str\" is not specified or is empty";
 	}
-?>
