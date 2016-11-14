@@ -5,7 +5,7 @@
         echo "Argument \"arr\" is not specified or is set incorrectly.";
         exit;
     }
-    header("Content-Type: text/pline");
+    header("Content-Type: text/plain");
     $arr = explode(",", $_GET['arr']);
     $len = count($arr) - 1;
     for ($i = 0; $i <= $len / 2; $i++)
@@ -19,4 +19,3 @@
 	{
 		print(" ".$value);
 	}
-?>
