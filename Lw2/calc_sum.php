@@ -49,4 +49,3 @@
                 echo "Incorrect operation!";
 		}
     }
-?>

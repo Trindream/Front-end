@@ -1,4 +1,3 @@
 <?
-    header("Content-Type: text/plaine");
+    header("Content-Type: text/plain");
     echo "Hello, Dear ", $_GET['name'], "!";
-?>
