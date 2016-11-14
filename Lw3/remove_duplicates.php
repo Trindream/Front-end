@@ -14,4 +14,3 @@
 	{
         echo "Incorrect number of arguments!\nUsage php remove_duplicates.php <input string>";
 	}
-?>
