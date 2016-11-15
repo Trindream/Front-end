@@ -1,5 +1,5 @@
 <?
-    if (($_GET['arr'] == NULL) || ($_GET['arr'] == ""))
+    if (empty($_GET['arr']))
     {
         header("HTTP/1.0 400");
         echo "Argument \"arr\" is not specified or is set incorrectly.";

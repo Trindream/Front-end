@@ -8,7 +8,7 @@
         "Dictionary" => "Словарь",
         "Elephant" => "Слон"
     );
-    if (isset($_GET['word']) && ($_GET['word'] != ""))
+    if (!empty($_GET['word']))
     {
         if (key_exists($_GET['word'], $dictionary))
 		{
