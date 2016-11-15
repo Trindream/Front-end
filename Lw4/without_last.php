@@ -1,7 +1,7 @@
 <?
 	require "include/common.inc.php";
 	
-	if (isset($_GET["str"]) && ($_GET["str"] != ""))
+	if (!empty($_GET["str"]))
 	{
 		print(withoutLast($_GET["str"]));
 	}
