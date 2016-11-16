@@ -1,7 +1,6 @@
 use rental;
 select
-  *
+  dvd.*
 from
   dvd
-where
-  dvd_id in (select dvd_id from offer where return_date is null);
+  right join offer using(dvd_id) where offer.return_date is null;
