@@ -1,6 +1,6 @@
 <?
     $ERR1 = 1;
-	$ERR2 = 2;
+    $ERR2 = 2;
 	
     function checkIdentifier($arrOfChar)
 	{
