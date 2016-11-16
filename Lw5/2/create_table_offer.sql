@@ -1,8 +1,9 @@
 use rental;
 create table offer
 (
-offer_id int not null primary key auto_increment,
-dvd_id int, customer_id int,
+offer_id serial primary key,
+dvd_id bigint unsigned,
+customer_id bigint unsigned,
 offer_date date,
 return_date date,
 foreign key(dvd_id) references dvd (dvd_id),
