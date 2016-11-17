@@ -1,6 +1,7 @@
 <?
-    $ERR1 = 1;
-    $ERR2 = 2;
+    define(FIRST_SYMBOL_ERROR, 1);
+    define(OTHER_SYMBOL_ERROR, 2);
+    define(DOUBLE_ERROR, 3);
 	
     function checkIdentifier($arrOfChar)
 	{
@@ -8,14 +9,21 @@
 
 		if (!ctype_alpha($arrOfChar[0]))
 		{
-			$error += $ERR1;
+			$error = FIRST_SYMBOL_ERROR;
 		}
 		
 		for ($i = 1; $i < count($arrOfChar); $i++)
 		{
 			if (!is_numeric($arrOfChar[$i]) && !ctype_alpha($arrOfChar[$i]))
 			{
-				$error += $ERR2;
+				if ($error)
+				{
+				    $error = DOUBLE_ERROR;
+				}
+				else
+				{
+				    $error = OTHER_SYMBOL_ERROR;
+				}
 				break;
 			}
 		}
@@ -31,11 +39,11 @@
 		else
 		{
 			print("No<br>");
-			if ($error == $ERR1)
+			if ($error == FIRST_SYMBOL_ERROR)
 			{
 				print("Идентификатор должен начинаться с буквы.");
 			}
-			else if ($error == $ERR2)
+			else if ($error == OTHER_SYMBOL_ERROR)
 			{
 				print("Идентификатор может состоять только из цифр и букв.");
 			}
