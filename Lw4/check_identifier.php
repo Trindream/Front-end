@@ -5,7 +5,6 @@
 	
     function checkIdentifier($arrOfChar)
 	{
-		global $ERR1, $ERR2;
 		$error = 0;
 
 		if (!ctype_alpha($arrOfChar[0]))
@@ -33,7 +32,6 @@
 	
 	function showResult($error)
 	{
-		global $ERR1, $ERR2;
 		if (!$error)
 		{
 			print("Yes");
